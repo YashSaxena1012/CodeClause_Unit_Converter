@@ -1,0 +1,125 @@
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.container h1{
+    color: white;
+    position: absolute;
+    top: 10%;
+    text-transform: uppercase;
+}
+.container{
+    background: rgb(143,143,152);
+    background: linear-gradient(167deg, rgba(143,143,152,1) 0%, rgba(0,0,0,1) 46%, rgba(106,111,112,1) 100%);
+    padding: 10%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid black;
+    box-shadow: 0px -1px 50px -12px rgba(0,0,0,0.75);
+    border-radius: 5rem;
+}
+#input,#result{
+    outline: none;
+    height: 3rem;
+    text-align: center;
+    margin: 1rem 1rem 1rem 0rem;
+    transition: .6s;
+}
+#input:hover,#result:hover{
+    box-shadow: inset 0px 0px 40px -3px rgba(219,212,219,1);
+    
+}
+.border-gradient {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 3px;
+}
+.border-gradient-purple {
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
+#inputType,#resultType{
+    height: 2rem;
+    outline:none;
+    border: 2px solid red;
+    color: cadetblue;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.clr-btn,.back-btn{
+    background-color: white;
+    color: black;
+    border-radius: 4rem;
+    width: 10rem;
+    padding: 1rem;
+    margin: auto;
+    font-weight: 600;
+    color: grey;
+    box-shadow: inset 0px 0px 10px black;
+    transition: .5s;
+}
+.clr-btn:hover,.back-btn:hover{
+    background-color: black;
+    color: aliceblue;
+    border: 2px solid white;
+    box-shadow: 0px 0px 10px white;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 5%;
+    /* height:fit-content; */
+  }
+  form{
+      margin-top: 7rem;
+  }
+  .text {
+      display: flex;
+    flex-direction: column;
+    margin-bottom: .75rem;
+  }
+  #input,
+  #result,
+  #inputType,
+  #resultType {
+      width: 100%;
+    margin: .75rem 0;
+}
+  .clr-btn,
+  .back-btn {
+      width: 100%;
+      margin: .5rem 0;
+  }
+  h1{
+      font-size: x-large;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        padding: 5%;
+    }
+    form{
+        margin-top: 4rem;
+    }
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  #input,
+  #result,
+  #inputType,
+  #resultType {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .btns{
+    display: flex; 
+    gap: 1rem;
+  }
+}

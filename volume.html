@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volume Converter</title>
+    <link rel="stylesheet" type="text/css" href="conversion-style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <form method="post">
+
+            <h1>VOLUME CONVERTER</h1>
+
+            <div class="text">
+                <input type="text" placeholder="Input" id="input" class="border-gradient border-gradient-purple">
+                <select id="inputType">
+                    <option value="liter"> liter (L)</option>
+                    <option value="centimeter">Cubic Centimeters (cm³)</option>
+                    <option value="meter">Cubic Meter (m³)</option>
+                    <option value="mililiter">Milliliter (ml)</option>
+                </select>
+            </div>
+
+            <div class="text">
+                <input type="text" placeholder="Result" id="result" class="border-gradient border-gradient-purple">
+                <select id="resultType">
+                    <option value="liter"> liter (L)</option>
+                    <option value="centimeter">Cubic Centimeters (cm³)</option>
+                    <option value="meter">Cubic Meter (m³)</option>
+                    <option value="mililiter">Milliliter (ml)</option>
+                </select>
+            </div>
+            <br>
+        </form>
+        <div class="btns">
+            <button class="clr-btn" onclick="clearall()">CLEAR ALL</button>
+            <a href="index.html"><button class="back-btn">BACK</button></a>
+        </div>
+    </div>
+
+    <script src="volume.js"></script>
+
+</body>
+
+</html>
